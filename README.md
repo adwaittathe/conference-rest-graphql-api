@@ -1,1 +1,0 @@
-# conference-rest-graphql-api
