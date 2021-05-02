@@ -1,0 +1,19 @@
+type Session{
+    session_id: ID!
+    session_name: String!
+    session_description: String!
+    session_length: Int!
+}
+
+type Query
+{
+    findAllSessions : [Session]!
+    countSession : Int!
+}
+
+type Mutation
+{
+    newSession(session_name : String!, session_description: String!, session_length: Int!) : Session!
+    deleteSession(id:ID!) : Boolean
+    updateSessionName(new_session_name : String!, id: ID!) : Session!
+}
